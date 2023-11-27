@@ -15,7 +15,8 @@ import {Event} from './event.entity'
     database: 'nest-events',
     entities: [Event],
     synchronize: true
-  })],
+  }),
+TypeOrmModule.forFeature([Event])],
   controllers: [AppController, EventsController],
   providers: [AppService],
 })
